@@ -33,6 +33,15 @@ without becoming features of the PLeX core itself.
 Composition happens through package manifests and the root project's
 `synps.toml`; package repositories do not define the core architecture.
 
+## Example projects
+
+| Repository | Role |
+|---|---|
+| [LaTaupe](https://github.com/useplx/LaTaupe) | Desktop web application firewall combining a compiled XGBoost enforcement graph with asynchronous Qwen3.5 reports. |
+
+Examples are applications built with PLeX, not dependencies or extensions of
+the core. See the [LaTaupe walkthrough](../examples/lataupe.md).
+
 ## Documentation repository
 
 The MkDocs site is intended to be published at

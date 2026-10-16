@@ -91,6 +91,8 @@ nav:
       - RAG: packages/rag.md
       - Qwen3.5-2B: packages/qwen3.5.md
       - Yolo26: packages/yolo26.md
+  - Examples:
+      - LaTaupe: examples/lataupe.md
   - Project:
       - Repositories: community/repositories.md
       - Publishing the docs: community/publishing-docs.md
