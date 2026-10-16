@@ -1,0 +1,96 @@
+site_name: PLeX
+site_description: Ecosystem for self-contained artifacts with quantization and granular backward compatibility.
+site_url: https://useplx.github.io/
+repo_url: https://github.com/useplx
+repo_name: useplx
+edit_uri: ""
+copyright: PLeX
+
+theme:
+  name: mkdocs
+  locale: en
+  highlightjs: true
+  hljs_languages: [cpp, c, bash, toml, yaml, json, rust, go]
+  navigation_depth: 3
+  nav_style: dark
+  shortcuts:
+    help: 191
+    next: 78
+    previous: 80
+    search: 83
+
+plugins:
+  - search:
+      lang: en
+      min_search_length: 2
+      indexing: full
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
+  - js/mermaid-init.js
+
+extra_css:
+  - css/brand.css
+  - css/mermaid.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+
+strict: true
+validation:
+  absolute_links: warn
+  unrecognized_links: warn
+  nav:
+    omitted_files: ignore
+    not_found: warn
+
+nav:
+  - PLeX: index.md
+  - Start here:
+      - Installation: guide/install.md
+      - Quickstart: guide/getting-started.md
+      - Core concepts: guide/concepts.md
+      - Architecture: guide/architecture.md
+  - Guides:
+      - Build a project: guide/build-a-project.md
+      - Create a package: guide/create-a-package.md
+      - Compose packages: guide/compose-packages.md
+      - Package an artifact: guide/artifacts.md
+      - Quantize weights: guide/quantize-weights.md
+      - Cross-compile: guide/cross-compile.md
+  - Concepts:
+      - Overview: notes/index.md
+      - Execution model: notes/execution-model.md
+      - Graph paths and policies: notes/granularity.md
+      - Compilation pipeline: notes/compilation.md
+      - Devices and scheduling: notes/devices.md
+      - Build workflow: notes/build-workflow.md
+      - Package resolution: notes/package-resolution.md
+      - Build domains: notes/build-domains.md
+      - Toolchains: notes/toolchains.md
+      - IREE integration: notes/iree-audit.md
+  - API reference:
+      - Overview: api/index.md
+      - Project manifest: api/synps-toml.md
+      - synps CLI: api/synps-cli.md
+      - SDK: api/sdk.md
+      - Runtime: api/runtime.md
+      - Bindings: api/bindings.md
+      - Diagnostics: notes/diagnostics.md
+  - Components:
+      - SYNaPSe: tools/synapse.md
+      - MyeLiN: tools/myelin.md
+  - Packages:
+      - Overview: packages/index.md
+      - Quantizations: packages/quantizations.md
+      - RAG: packages/rag.md
+      - Qwen3.5-2B: packages/qwen3.5.md
+      - Yolo26: packages/yolo26.md
+  - Project:
+      - Repositories: community/repositories.md
+      - Publishing the docs: community/publishing-docs.md

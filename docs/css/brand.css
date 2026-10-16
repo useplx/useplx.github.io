@@ -1,0 +1,167 @@
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    font-size: 0;
+}
+
+.navbar-brand::before {
+    content: "";
+    display: inline-block;
+    width: 4.5rem;
+    height: 2.44rem;
+    background-image: url("../img/plex.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex: 0 0 auto;
+}
+
+.plex-hero {
+    margin: 1.25rem 0 2.25rem;
+    padding: 2.1rem 2.25rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.65rem;
+    background: #f8f9fa;
+}
+
+.plex-hero h1 {
+    margin-top: 0;
+    margin-bottom: 0.55rem;
+    font-size: 2.45rem;
+}
+
+.plex-hero p {
+    max-width: 52rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.13rem;
+    line-height: 1.65;
+}
+
+.plex-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.plex-action {
+    display: inline-block;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #b8c1cc;
+    border-radius: 0.35rem;
+    background: #fff;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.plex-action-primary {
+    border-color: #337ab7;
+    background: #337ab7;
+    color: #fff !important;
+}
+
+.plex-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.plex-card {
+    min-width: 0;
+    padding: 1.05rem 1.1rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.plex-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.05rem;
+}
+
+.plex-card p {
+    margin: 0;
+    line-height: 1.55;
+    color: #4a4f55;
+}
+
+.plex-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin: 1rem 0 2rem;
+    counter-reset: plex-step;
+}
+
+.plex-step {
+    position: relative;
+    padding: 1rem 1rem 1rem 2.9rem;
+    border-top: 2px solid #d4d9df;
+    counter-increment: plex-step;
+}
+
+.plex-step::before {
+    content: counter(plex-step);
+    position: absolute;
+    top: 0.75rem;
+    left: 0.15rem;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #337ab7;
+    color: #fff;
+    font-weight: 700;
+}
+
+.plex-step strong {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.plex-step span {
+    color: #4a4f55;
+}
+
+.plex-doc-card {
+    display: block;
+    height: 100%;
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.plex-doc-card:hover h3 {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .plex-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .plex-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-brand::before {
+        width: 3.7rem;
+        height: 2rem;
+    }
+
+    .plex-hero {
+        padding: 1.4rem 1.2rem;
+    }
+
+    .plex-hero h1 {
+        font-size: 2rem;
+    }
+
+    .plex-grid,
+    .plex-steps {
+        grid-template-columns: 1fr;
+    }
+}
