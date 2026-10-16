@@ -53,12 +53,13 @@ synps add quantizations --path ../Quantizations
 Git dependency:
 
 ```bash
-synps add quantizations --git https://github.com/useplx/Quantizations.git
+synps add f16 --git https://github.com/useplx/Quantizations.git
 ```
 
 `add` requires at least one of `--path` or `--git`. Add `version = "v1.0.0"` or
 `rev = "<commit>"` to the generated Git dependency before publishing a
-reproducible project. `remove` uses the dependency alias as it appears under
+reproducible project. For a package inside a monorepo, also add
+`subdir = "F16"`. `remove` uses the dependency alias as it appears under
 `[dependencies]`.
 
 ## Resolve

@@ -57,7 +57,7 @@ Supported forms:
 | Form | Fields |
 |---|---|
 | Local | `path` |
-| Git | `git`, optionally `rev` or `version` |
+| Git | `git`, optionally `rev` or `version`, and optionally `subdir` |
 | Registry | version string/table syntax is parsed, but registry resolution is currently unavailable |
 
 The table key is the dependency alias used by package configuration and

@@ -78,6 +78,7 @@ message is read.
 | `E434` | Variable value type does not match its schema. |
 | `E442` | Package variables were supplied where no schema declares them. |
 | `E446`/`E447` | Numeric package variable violates configured range/bounds. |
+| `E448` | A Git dependency `subdir` escapes the checked-out repository. |
 | `E502` | Lockfile version is unsupported. |
 | `E605` | External process returned failure. |
 | `E606` | File cannot be read. |

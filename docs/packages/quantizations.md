@@ -26,7 +26,8 @@ packages; each codec directory also has its own standalone `synps.toml`.
 
 ```toml
 [dependencies]
-quantizations = { git = "https://github.com/useplx/Quantizations.git", version = "v1.0.0" }
+f16 = { git = "https://github.com/useplx/Quantizations.git", version = "v1.0.0", subdir = "F16" }
+q4k = { git = "https://github.com/useplx/Quantizations.git", version = "v1.0.0", subdir = "Q4K" }
 
 [policies."model"]
 dtype = "f16"

@@ -19,7 +19,7 @@ policy to define how immutable constants would be stored, even though the
 identity graph below has no named checkpoint weight:
 
 ```bash
-synps add quantizations --git https://github.com/useplx/Quantizations.git
+synps add f16 --git https://github.com/useplx/Quantizations.git
 ```
 
 ## 2. Export a graph
@@ -106,7 +106,7 @@ version = "0.1.0"
 package = "hello-plex"
 
 [dependencies]
-quantizations = { git = "https://github.com/useplx/Quantizations.git", version = "v1.0.0" }
+f16 = { git = "https://github.com/useplx/Quantizations.git", version = "v1.0.0", subdir = "F16" }
 
 [build.graph]
 namespace = "helloplex"

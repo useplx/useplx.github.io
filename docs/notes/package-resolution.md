@@ -23,6 +23,15 @@ The resolver caches Git sources under `~/.cache/synapse`. Selection preference
 for Git dependencies is an explicit `rev`, then a declared version selector,
 then the repository's default HEAD when neither is supplied.
 
+Use `subdir` when one repository contains multiple packages:
+
+```toml
+[dependencies]
+f16 = { git = "https://github.com/useplx/Quantizations.git", version = "v1.0.0", subdir = "F16" }
+```
+
+The resolved subdirectory must remain inside the checked-out repository.
+
 Use a commit `rev` when source identity matters.
 
 ## Registry sources
