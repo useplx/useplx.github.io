@@ -37,7 +37,7 @@ Select it through a dependency alias:
 package = "qwen"
 
 [dependencies]
-qwen = { git = "https://github.com/useplx/Qwen3_VL.git", version = "v1.0.0" }
+qwen = { git = "https://github.com/useplx/Qwen3.5.git", version = "v1.0.0" }
 ```
 
 No application-specific C++ wrapper is required.
@@ -60,12 +60,12 @@ Use the typed input from the package. The Runtime selects its argument
 serialization automatically:
 
 ```cpp
-Qwen3VL::Input request{
+Qwen35::Input request{
     .content = {
-        Qwen3VL::Text{"Compare these images: "},
-        Qwen3VL::Image{first_encoded_image},
-        Qwen3VL::Text{" and "},
-        Qwen3VL::Image{second_encoded_image},
+        Qwen35::Text{"Compare these images: "},
+        Qwen35::Image{first_encoded_image},
+        Qwen35::Text{" and "},
+        Qwen35::Image{second_encoded_image},
     },
 };
 

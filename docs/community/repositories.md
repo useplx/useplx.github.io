@@ -27,7 +27,7 @@ without becoming features of the PLeX core itself.
 |---|---|
 | [Quantizations](https://github.com/useplx/Quantizations) | Weight-storage codecs exported to the Compiler. |
 | [RAG](https://github.com/useplx/RAG) | Retrieval/embedding/vector-index building blocks. |
-| [Qwen3.5](https://github.com/useplx/Qwen3_VL) | Qwen3.5-2B model-port package. |
+| [Qwen3.5](https://github.com/useplx/Qwen3.5) | Qwen3.5-2B model-port package. |
 | [Yolo26](https://github.com/useplx/Yolo26) | Object-detection model package. |
 
 Composition happens through package manifests and the root project's

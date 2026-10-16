@@ -16,7 +16,7 @@ The path is relative to the declaring manifest.
 
 ```toml
 [dependencies]
-model = { git = "https://github.com/useplx/Qwen3_VL.git", version = "v1.0.0" }
+model = { git = "https://github.com/useplx/Qwen3.5.git", version = "v1.0.0" }
 ```
 
 The resolver caches Git sources under `~/.cache/synapse`. Selection preference

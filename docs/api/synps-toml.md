@@ -49,7 +49,7 @@ A dependency selects exactly one source form.
 ```toml
 [dependencies]
 local_codec = { path = "../Quantizations/F16" }
-model = { git = "https://github.com/useplx/Qwen3_VL.git", version = "v1.0.0" }
+model = { git = "https://github.com/useplx/Qwen3.5.git", version = "v1.0.0" }
 ```
 
 Supported forms:
