@@ -24,6 +24,7 @@ plugins:
       lang: en
       min_search_length: 2
       indexing: full
+      prebuild_index: true
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
@@ -50,7 +51,6 @@ validation:
     not_found: warn
 
 nav:
-  - PLeX: index.md
   - Start here:
       - Installation: guide/install.md
       - Quickstart: guide/getting-started.md
